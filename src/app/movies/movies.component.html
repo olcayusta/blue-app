@@ -1,0 +1,15 @@
+<h1>Filmler</h1>
+
+<div class="items">
+  <div class="item" *ngFor="let movie of movies$ | async">
+    <div class="img-background">
+      <img src="https://image.tmdb.org/t/p/w200{{movie.poster_path}}" alt="{{movie.title}}">
+    </div>
+    <div class="details">
+      <!--  <div class="release-year">{{movie.release_date | date: 'yyyy'}}</div>-->
+      <a routerLink="/watch/{{movie.id}}">
+        <div class="title">{{movie.title}}</div>
+      </a>
+    </div>
+  </div>
+</div>

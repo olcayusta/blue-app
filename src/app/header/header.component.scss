@@ -1,0 +1,78 @@
+header {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  overflow: auto;
+
+  // position: fixed;
+  top: 0;
+  z-index: 1;
+/*  background-color: rgba(255, 255, 255, 0.88);
+  backdrop-filter: saturate(50%) blur(20px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .05), 0 1px 3px rgba(0, 0, 0, .07), inset 0 1px 1px rgba(255, 255, 255, 0.45);*/
+}
+
+.logo {
+  width: 160px;
+  padding-left: 24px;
+}
+
+.app-title {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.first-link {
+  padding-left: 0 !important;
+}
+
+a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 0 24px;
+}
+
+.flex-spacer {
+  flex: 1 0 auto;
+}
+
+.active {
+  font-weight: 700;
+}
+
+@media (max-width: 599px) {
+  .logo {
+    padding: 0;
+  }
+
+  a {
+    display: none;
+  }
+}
+
+.avatar-btn {
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 8px;
+  }
+}
+
+.avatar {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
